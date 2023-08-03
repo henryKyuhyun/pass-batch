@@ -25,7 +25,7 @@ public class ExpirePassesJobConfig {
     private final int CHUNK_SIZE = 5;
 
 //    EnableBatchProcessing 로 인해 Bean 으로 제공된 JobBuilderFactory, StepBuilderFactory
-
+// Job을 생성하는 코들르 작성 후 다음코드들 작성.
     private final JobBuilderFactory jobBuilderFactory;
     private final StepBuilderFactory stepBuilderFactory;
 
