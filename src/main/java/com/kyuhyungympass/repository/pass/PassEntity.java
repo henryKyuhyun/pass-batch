@@ -2,6 +2,7 @@ package com.kyuhyungympass.repository.pass;
 
 
 import com.kyuhyungympass.BaseEntity;
+import com.kyuhyungympass.repository.packaze.PackageEntity;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -21,11 +22,16 @@ public class PassEntity extends BaseEntity {
     private Integer packageSeq;
     private String userId;
 
+    @Enumerated(EnumType.STRING)
     private PassStatus status;
     private Integer remainingCount;
 
     private LocalDateTime startedAt;
     private LocalDateTime endedAt;
     private LocalDateTime expiredAt;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "packageSeq", insertable = false, updatable = false)
+    private PackageEntity packageEntity;
 
 }

@@ -2,7 +2,7 @@ package com.kyuhyungympass.repository.notification;
 
 import com.kyuhyungympass.repository.booking.BookingEntity;
 
-import com.kyuhyungympass.repository.pass.LocalDateTimeUtils;
+import com.kyuhyungympass.util.LocalDateTimeUtils;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Named;

@@ -1,4 +1,4 @@
-package com.kyuhyungympass.repository.pass;
+package com.kyuhyungympass.util;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -30,7 +30,7 @@ public class LocalDateTimeUtils {
     }
 
     public static int getWeekOfYear(final LocalDateTime localDateTime) {
-        return localDateTime.get(WeekFields.of(Locale.KOREA).weekOfYear());
+        return localDateTime.get(WeekFields.of(Locale.KOREA).weekOfYear()); //한해에서 몇번째주인지 넘버를 뽑아오는 함수
 
     }
 
